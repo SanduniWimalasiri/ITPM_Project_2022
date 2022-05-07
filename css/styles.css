@@ -1,0 +1,195 @@
+.logo{
+    float: left;
+}
+
+.menu{
+    line-height: 80px;
+}
+
+.menu2{
+    line-height: 1px;
+}
+
+.menu ul{
+    list-style-type: none;
+}
+
+.menu2 ul{
+    list-style-type: none;
+}
+
+.menu ul li{
+    display: inline;
+    padding: 1%;
+    font-weight: bold;
+}
+
+.menu2 ul li{
+    display: inline;
+    padding: 1%;
+    font-weight: bold;
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.text-right{
+    text-align: right;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.clearfix{
+    clear: both;
+    float: none;
+}
+
+a{
+    color: 	#00008B;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #0096FF;
+}
+
+.item-search{
+    padding: 3%;
+    background-color: #14C9CB;
+}
+
+.b{
+    text-align: right;
+}
+
+.text-white{
+    color: white;
+}
+
+h2{
+    color: #2f3542;
+    font-size: 2rem;
+    margin-bottom: 2%;
+}
+
+.line{
+    border-top: 4px solid #00008B;
+}
+
+.item-m{
+    background-color: #ececec;
+    padding: 4% 0;
+}
+.item-m-img{
+    width: 20%;
+    float: left;
+}
+
+.curve{
+    border-radius: 5px;
+}
+
+.item-menu-desc{
+    width: 70%;
+    float: left;
+    margin-left: 8%;
+}
+
+.label{
+    margin-bottom: 1%; 
+    font-weight: bold;
+}
+
+.input-res{
+    width: 96%;
+    padding: 1%;
+    margin-bottom: 3%;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.form{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.button{
+    padding: 1%;
+    border: none;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+.button1{
+    background-color: gray;
+    color: white;
+    cursor: pointer;
+}
+.button1:hover{
+    color: white;
+    background-color: #202A44;
+}
+
+.c{
+    border: 2px solid white;
+    margin: 5%;
+    padding: 3%;
+    border-radius: 5px;
+}
+
+.manage{
+    padding: 2%;
+    background-color: #9DC1B7;
+}
+
+.item{
+    background-color: #ececec;
+    padding: 4% 0;
+}
+.item-box{
+    width: 43%;
+    margin: 1%;
+    padding: 2%;
+    float: left;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.item-img{
+    width: 20%;
+    float: left;
+}
+
+.item-desc{
+    width: 70%;
+    float: left;
+    margin-left: 8%;
+}
+
+.item-price{
+    font-size: 1.2rem;
+    margin: 2% 0;
+}
+.item-detail{
+    font-size: 1rem;
+    color: #747d8c;
+}
+
+.btn-c{
+    background-color: #078035;
+    padding: 5px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 3px;
+    margin-left: 100px;
+}
+
+.btn-c:hover{
+    background-color: #043615;
+    color: white;
+}

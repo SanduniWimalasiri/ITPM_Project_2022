@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper{
+    padding: 5px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.footer{
+    background-color: #e95151;
+    color: white;
+}
+
+.menu{
+    border-bottom: 1px solid grey;
+}
+.menu ul{
+    list-style-type: none;
+}
+
+.menu ul li{
+    display: inline;
+    padding: 3px;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #c24949;
+}
+
+.menu ul li a:hover{
+    color: #f50909;
+}
+
+.main-content{
+    padding: 1% 0;
+    background-color: rgb(233, 235, 236);
+}
+
+.tab{
+    width: 100%;
+    padding-top: 40px;
+    padding-left: 100px;
+}
+
+table tr th{
+    border-bottom: 1px solid black;
+    padding: 1px;
+    text-align: left;
+}
+
+table tr td{
+    padding: 1%;
+}
+
+.btn-a{
+    background-color: #1e90ff;
+    padding: 5px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 3px;
+}
+
+.btn-a:hover{
+    background-color: #3742fa;
+    color: white;
+}
+
+.btn-b{
+    background-color: #D0312D;
+    padding: 5px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 3px;
+}
+
+.btn-b:hover{
+    background-color: #900603;
+    color: white;
+}
+
+/*Manage-Item Part CSS*/
+.btn-c{
+    background-color: #078035;
+    padding: 5px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 3px;
+    margin-left: 100px;
+}
+
+.btn-c:hover{
+    background-color: #043615;
+    color: white;
+}
