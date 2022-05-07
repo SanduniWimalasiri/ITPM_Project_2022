@@ -193,3 +193,13 @@ h2{
     background-color: #043615;
     color: white;
 }
+
+.error{
+    padding: 2%;
+    color: red;
+}
+
+.success{
+    padding: 2%;
+    color: green;
+}

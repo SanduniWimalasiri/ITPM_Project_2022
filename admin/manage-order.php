@@ -5,45 +5,80 @@
         <div class="wrapper">
             <h1>Manage Order</h1>
         </div>
+
+        <?php
+            if(isset($_SESSION['update']))
+            {
+                echo $_SESSION['update'];
+                unset($_SESSION['update']);
+            }
+        ?>
     
     <table class="tab">
         <tr>
-            <th>ID</th>
+            <th>No</th>
+            <th>Order ID</th>
             <th>Item</th>
             <th>Price</th>
             <th>Qty</th>
-            <th>Action</th>
+            <th>Total</th>
+            <th>Customer Name</th>
+            <th>Customer Contact</th>
+            <th>Actions</th>
         </tr>
-        <tr>                                   
-            <td>1</td>
-            <td>Television</td>
-            <td>Rs.1000</td>
-            <td>1</td>
-            <td>
-                <a href="#" class="btn-a">Update Order</a>
-                <a href="#" class="btn-b">Delete Order</a>
-            </td>
-        </tr>
-        <tr>
-            <td>2</td>
-            <td>Television</td>
-            <td>Rs.1000</td>
-            <td>1</td>
-            <td>
-                <a href="#" class="btn-a">Update Order</a>
-                <a href="#" class="btn-b">Delete Order</a>
-            </td>
-        </tr>
-        <tr>
-            <td>3</td>
-            <td>Television</td>
-            <td>Rs.1000</td>
-            <td>1</td>
-            <td>
-                <a href="#" class="btn-a">Update Order</a>
-                <a href="#" class="btn-b">Delete Order</a>
-            </td>
-        </tr>
+
+        <?php
+            //Get all the orders from database
+            $sql = "SELECT * FROM tbl_order ORDER BY id DESC";
+
+            //Execute Query
+            $res = mysqli_query($conn,$sql);
+
+            //Count the rows
+            $count = mysqli_num_rows($res);
+
+            $sn = 1; //Create serial number
+
+            if($count>0)
+            {
+                //Order Available
+                while($row = mysqli_fetch_assoc($res))
+                {
+                    //Get order details
+                    $id = $row['id'];
+                    $item = $row['item'];
+                    $price = $row['price'];
+                    $qty = $row['qty'];
+                    $total = $row['total'];
+                    $customer_name = $row['customer_name'];
+                    $customer_contact = $row['customer_contact'];
+
+                    ?>
+
+                    <tr>                                   
+                        <td><?php echo $sn++;?>.</td>
+                        <td><?php echo $id;?></td>
+                        <td><?php echo $item;?></td>
+                        <td><?php echo $price;?></td>
+                        <td><?php echo $qty;?></td>
+                        <td><?php echo $total;?></td>
+                        <td><?php echo $customer_name;?></td>
+                        <td><?php echo $customer_contact;?></td>
+                        <td>
+                            <a href="<?php echo SITEURL;?>update-order.php?id=<?php echo $id;?>" class="btn-a">Update Order</a>
+                            <a href="<?php echo SITEURL;?>view-order.php?id=<?php echo $id;?>" class="btn-d">View Order</a>
+                            <a href="#" class="btn-b">Delete Order</a>
+                        </td>
+                    </tr>
+                    <?php
+                }
+            }
+            else
+            {
+                echo "<tr><td colspan='9' class='error'>Order not available</td></tr>";
+            }
+        ?>
+                
     </table>
     </div>
 

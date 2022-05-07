@@ -146,12 +146,12 @@
                         //Check whether the query executed successfully
                         if($res2 == true)
                         {
-                            $_SESSION['order'] = "<div class='success'>Order Placed Successfully</div>";
+                            $_SESSION['order'] = "<div class='success text-center'>Order Placed Successfully</div>";
                             header('location:'.SITEURL);
                         }
                         else
                         {
-                            $_SESSION['order'] = "<div class='error'>Order Failed</div>";
+                            $_SESSION['order'] = "<div class='error text-center'>Order Failed</div>";
                             header('location:'.SITEURL);
                         }
                 }

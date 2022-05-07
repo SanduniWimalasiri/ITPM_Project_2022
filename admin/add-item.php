@@ -17,7 +17,7 @@
 
         <form action='' method='POST' enctype="multipart/form-data">
 
-            <table class=''>
+            <table class='tbl-30'>
                 <tr>
                     <td>Title:</td>
                     <td>
