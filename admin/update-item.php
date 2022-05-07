@@ -43,42 +43,42 @@
 
         <table border="0" class="tbl-30">
             <tr>
-                <td>Title :</td>
+                <td>Title </td>
                 <td>
                     <input type="text" name="title" placeholder=" Title of the Item" value="<?php echo $title ;?>">
                 </td>    
             </tr>
 
             <tr>
-                <td>Description :</td>
+                <td>Description </td>
                 <td>
                     <textarea name="description" cols="30"  rows="5" placeholder=" Description of the Item" value="<?php echo $description ;?>"></textarea>
                 </td>    
             </tr>
 
             <tr>
-                <td>Price :</td>
+                <td>Price </td>
                 <td>
                     <input type="number" name="price" placeholder=" Price of the Item" value="<?php echo $price ;?>">
                 </td>    
             </tr>
 
             <tr>
-                <td>current Image :</td>
+                <td>current Image </td>
                 <td>
                 Display the Image if Available
                 </td>    
             </tr>
 
             <tr>
-                <td>Select Image :</td>
+                <td>Select Image </td>
                 <td>
                 <input type="file" name="image" >
                 </td>    
             </tr>
 
             <tr>  
-                <td>Category :</td>
+                <td>Category </td>
                 <td>
                     <select name="category">
 
@@ -105,7 +105,7 @@
 
                                     ?>
 
-                                    <option  <?php if($$category==$category_id) {echo "selected";}?>  value="<?php echo $category_id; ?>"> <?php echo $category_title;?></option>
+                                    <option  <?php if($current_category==$category_id) {echo "selected";}?>  value="<?php echo $category_id; ?>"> <?php echo $category_title;?></option>
                                 
                                     <?php
                                 }
@@ -126,7 +126,7 @@
             </tr>
 
             <tr>
-                <td>Active :</td>
+                <td>Active </td>
                 <td>
                     <input <?php if($active=="Yes") {echo "checked";}?> type="radio" name="active" value="Yes">Yes
                     <input <?php if($active=="No") {echo "checked";}?> type="radio" name="active" value="No">No

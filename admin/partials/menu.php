@@ -13,10 +13,12 @@
         <div class="menu text-center">
             <div class="wrapper">
                 <ul>
-                    <li> <a href="index.php">Home </a></li>
-                    <li> <a href="manage-category.php">Category </a></li>
-                    <li> <a href="manage-item.php">Item </a></li>
-                    <li> <a href="#">Contact </a></li>
+                    <li> <a href="#">Home </a></li>
+                    <li> <a href="#">Admin </a></li>
+                    <li> <a href="#">Category </a></li>
+                    <li> <a href="#">Item </a></li>
+                    <li> <a href="#">Order </a></li>
+                    <li> <a href="#">Logout </a></li>
                  </ul>
             </div>
         </div>

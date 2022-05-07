@@ -47,8 +47,10 @@
         
         <table class="tbl-full">
             <tr>
-                <th> Iten No</th>
-                <th> Iten Name</th>
+                <th> Item No</th>
+                <th> Item Name</th>
+                <th> Item Price</th>
+                <th> Available</th>
                 <th> Action</th>
             </tr>
             <?php 
@@ -82,7 +84,7 @@
                                     <tr>
                                         <td><?php echo $sn++;;?>.</td>
                                         <td><?php echo $title;?></td>
-                                        <td><?php echo $price;?></td>
+                                        <td>Rs.<?php echo $price;?>.00</td>
                                         <?php
                                         //check weather we have image or not
                                         if($image_name=="")
@@ -94,7 +96,7 @@
                                         {
                                             //we have image display image
                                             ?>
-                                                <img src="<?php echo SITEURL; ?> images/item/<?php echo $image_name;?>"> 
+                                                <img src="<?php echo SITEURL; ?> images/item/<?php echo $image_name;?>" width="50px"> 
                                             <?php
                                         }
                                         

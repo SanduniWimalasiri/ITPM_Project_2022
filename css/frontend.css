@@ -1,6 +1,5 @@
 
 
-/* CSS for All */
 *{
     margin: 0 0;
     padding: 0 0;
@@ -103,8 +102,6 @@ fieldset{
 }
 
 
-
-
 .item-search{
     background-image: url(../images/bg.jpg);
     background-size: cover;
@@ -112,6 +109,8 @@ fieldset{
     background-position: center;
     padding: 7% 0;
 }
+
+
 
 .item-search input[type="search"]{
     width: 50%;

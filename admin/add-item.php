@@ -19,35 +19,35 @@
 
         <table border="0" class="tbl-30">
             <tr>
-                <td>Title :</td>
+                <td>Title </td>
                 <td>
                     <input type="text" name="title" placeholder=" Title of the Item">
                 </td>    
             </tr>
 
             <tr>
-                <td>Description :</td>
+                <td>Description </td>
                 <td>
                     <textarea name="description" cols="30"  rows="5" placeholder=" Description of the Item"></textarea>
                 </td>    
             </tr>
 
             <tr>
-                <td>Price :</td>
+                <td>Price </td>
                 <td>
                     <input type="number" name="price" placeholder=" Price of the Item">
                 </td>    
             </tr>
 
             <tr>
-                <td>Select Image :</td>
+                <td>Select Image </td>
                 <td>
                     <input type="file" name="image" >
                 </td>    
             </tr>
 
             <tr>  
-                <td>Category :</td>
+                <td>Category </td>
                 <td>
                     <select name="category">
                     <?php 
@@ -95,7 +95,7 @@
             </tr>
 
             <tr>
-                <td>Active :</td>
+                <td>Active </td>
                 <td>
                     <input type="radio" name="active" value="Yes">Yes
                     <input type="radio" name="active" value="No">No
