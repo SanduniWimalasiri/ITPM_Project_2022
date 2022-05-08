@@ -64,28 +64,28 @@
                     <tr>
                         <td>Customer Name</td>
                         <td>
-                            <input type="text" name="customer_name" value="<?php echo $customer_name?>">
+                            <input type="text" name="customer_name" value="<?php echo $customer_name;?>">
                         </td>
                     </tr>
 
                     <tr>
                         <td>Customer Contact</td>
                         <td>
-                            <input type="text" name="customer_contact" value="<?php echo $customer_contact?>">
+                            <input type="text" name="customer_contact" value="<?php echo $customer_contact;?>">
                         </td>
                     </tr>
 
                     <tr>
                         <td>Customer Email</td>
                         <td>
-                            <input type="text" name="customer_email" value="<?php echo $customer_email?>">
+                            <input type="text" name="customer_email" value="<?php echo $customer_email;?>">
                         </td>
                     </tr>
 
                     <tr>
                         <td>Customer Address</td>
                         <td>
-                            <textarea name="customer_address" cols="30" rows="5"><?php echo $customer_address?></textarea>
+                            <textarea name="customer_address" cols="30" rows="5"><?php echo $customer_address;?></textarea>
                         </td>
                     </tr>
 
@@ -125,7 +125,7 @@
                     $status = $_POST['status'];
                     $customer_name = $_POST['customer_name'];
                     $customer_contact = $_POST['customer_contact'];
-                    $customer_email = $POST['customer_email'];
+                    $customer_email = $_POST['customer_email'];
                     $customer_address = $_POST['customer_address'];
 
                     //Update the values

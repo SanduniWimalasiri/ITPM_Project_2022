@@ -12,6 +12,13 @@
                 echo $_SESSION['update'];
                 unset($_SESSION['update']);
             }
+
+            if(isset($_SESSION['delete']))
+            {
+                echo $_SESSION['delete'];
+                unset($_SESSION['delete']);
+            }
+
         ?>
     
     <table class="tab">
@@ -67,7 +74,7 @@
                         <td>
                             <a href="<?php echo SITEURL;?>update-order.php?id=<?php echo $id;?>" class="btn-a">Update Order</a>
                             <a href="<?php echo SITEURL;?>view-order.php?id=<?php echo $id;?>" class="btn-d">View Order</a>
-                            <a href="#" class="btn-b">Delete Order</a>
+                            <a href="<?php echo SITEURL;?>delete-order.php?id=<?php echo $id;?>" class="btn-b">Delete Order</a>
                         </td>
                     </tr>
                     <?php
