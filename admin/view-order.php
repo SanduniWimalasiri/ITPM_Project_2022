@@ -65,7 +65,7 @@
 
                     <tr>
                         <td><b>Total</b></td>
-                        <td><?php echo $total;?></td>
+                        <td>Rs.<?php echo $total;?></td>
                     </tr>
 
                     <tr>

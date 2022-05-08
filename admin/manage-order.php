@@ -26,14 +26,14 @@
             <th>No</th>
             <th>Order ID</th>
             <th>Item</th>
-            <th>Price</th>
+            
             <th>Qty</th>
             <th>Total</th>
             <th>Customer Name</th>
             <th>Customer Contact</th>
             <th>Actions</th>
         </tr>
-
+            
         <?php
             //Get all the orders from database
             $sql = "SELECT * FROM tbl_order ORDER BY id DESC";
@@ -54,7 +54,7 @@
                     //Get order details
                     $id = $row['id'];
                     $item = $row['item'];
-                    $price = $row['price'];
+                    
                     $qty = $row['qty'];
                     $total = $row['total'];
                     $customer_name = $row['customer_name'];
@@ -66,7 +66,7 @@
                         <td><?php echo $sn++;?>.</td>
                         <td><?php echo $id;?></td>
                         <td><?php echo $item;?></td>
-                        <td><?php echo $price;?></td>
+                        
                         <td><?php echo $qty;?></td>
                         <td><?php echo $total;?></td>
                         <td><?php echo $customer_name;?></td>
@@ -82,13 +82,18 @@
             }
             else
             {
-                echo "<tr><td colspan='9' class='error'>Order not available</td></tr>";
+                echo "<tr><td colspan='8' class='error'>Order not available</td></tr>";
             }
         ?>
                 
     </table>
+
+    <br><br>
+    <a href="report.php" class="btn-c">Order Report</a>
+    <br><br><br><br><br><br><br><br><br>
     </div>
 
     <!--Content End-->
+    
 
 <?php include('partials/footer.php');?>

@@ -132,3 +132,7 @@ table tr td{
 .tbl-30{
     width: 30%;
 }
+
+.tabR{
+    border:1px solid black;
+}

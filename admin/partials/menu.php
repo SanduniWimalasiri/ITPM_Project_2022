@@ -2,7 +2,7 @@
 
 <html>
     <head>
-        <title>Food order website</title>
+        <title>Order Item</title>
         <link rel="stylesheet" href="../css/admin.css">
     </head>
 
