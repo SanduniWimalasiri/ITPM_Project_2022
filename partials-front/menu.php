@@ -17,7 +17,7 @@
         <div class="container">
             <div class="logo">
                 <a href="#" title="Logo">
-                    <img src="https://previews.123rf.com/images/serkorkin/serkorkin2002/serkorkin200200028/139387035-electronic-technology-logo-design-computer-network-vector-logo-icon-.jpg" alt="Shop Logo" class="img-responsive">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0MMiJA33moe1r8aGphjQKL5tY8kdNPZIHXz0m_QnyuVnxOFNbm_mTD8VXByM2c3Phfjk&usqp=CAU" alt="Shop Logo" class="img-responsive">
                 </a>
             </div>
 

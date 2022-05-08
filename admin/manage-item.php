@@ -41,15 +41,19 @@
 
         ?>
 
+<br> <br>
+
         <!--Button to add item-->
-        <a href="<?php echo SITEURL;?>admin/add-item.php" class="btn-primary">Add Item</a>
+        <a href="<?php echo SITEURL;?>admin/add-item.php" class="btn-primary">Add Item</a> 
+        <a href="<?php echo SITEURL;?>admin/item-report.php" class="btn-primary">Report generation</a>
         <br> <br> <br>
         
         <table class="tbl-full">
             <tr>
                 <th> Item No</th>
-                <th> Item Name</th>
-                <th> Item Price</th>
+                <th> Name</th>
+                <th> Price</th>
+                <th> Image</th>
                 <th> Available</th>
                 <th> Action</th>
             </tr>
@@ -85,6 +89,7 @@
                                         <td><?php echo $sn++;;?>.</td>
                                         <td><?php echo $title;?></td>
                                         <td>Rs.<?php echo $price;?>.00</td>
+                                        <td>
                                         <?php
                                         //check weather we have image or not
                                         if($image_name=="")
@@ -96,20 +101,19 @@
                                         {
                                             //we have image display image
                                             ?>
-                                                <img src="<?php echo SITEURL; ?> images/item/<?php echo $image_name;?>" width="50px"> 
+                                                <img src="<?php echo SITEURL; ?>images/item/<?php echo $image_name;?>" width="50px"> 
                                             <?php
                                         }
                                         
                                         ?>
+                                        </td>
                                         
                                         <td><?php echo $active;?></td>
                                         <td> 
                                             <a href="<?php echo SITEURL; ?>admin/update-item.php?id=<?php echo $id; ?>"   class="btn-secondary">Update Item</a>
                                             <a href="<?php echo SITEURL; ?>admin/delete-item.php?id=<?php echo $id; ?> &image_name=<?php echo $image_name; ?>" class="btn-danger">Delete Item</a>
                                         </td>   
-                                </tr>    
-
-                                
+                                    </tr>
                                     <?php
                                 }
                             }

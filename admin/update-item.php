@@ -225,13 +225,17 @@
                 }
             }
 
-        }   
+        } 
+            else
+            {
+                $image_name=$current_image;//default image when image is not selected
+            }  
 
     }     
 
-        else
+    else
         {
-            $image_name=$current_image;
+            $image_name=$current_image;//default image when button is not selected
         }
 
 
