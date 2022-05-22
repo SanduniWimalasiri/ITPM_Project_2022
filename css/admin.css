@@ -1,0 +1,76 @@
+.tbl-full{
+    width: 50%;
+}
+
+.tbl-30{
+    width: 60%;
+}
+
+table tr th{
+    border-bottom: 1px solid black;
+    padding: 5%;
+    text-align: left;
+}
+
+table tr td{
+    padding: 2%;
+}
+
+.btn-primary{
+    background-color: #4169e1;
+    padding: 1%;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-primary:hover{
+    background-color: #0000cd;
+}
+
+.btn-change{
+    background-color: #1e90ff;
+    padding: 1%;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-change:hover{
+    background-color: #6495ed;
+}
+
+.btn-update{
+    background-color: #4682b4;
+    padding: 1%;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-update:hover{
+    background-color:#1e90ff;
+}
+
+.btn-delete{
+    background-color: #ff0000;
+    padding: 1%;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-delete:hover{
+    background-color:#b22222;
+}
+
+.login{
+    border: 1px solid black;
+    width: 25%;
+    margin: 5% auto;
+    padding: 2%;
+}
+
+.text-center{
+    text-align: center;
+}
